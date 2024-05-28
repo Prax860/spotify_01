@@ -58,7 +58,7 @@
         <div class="header rounded">
           <div class="nav">
             
-              <svg
+              <button class="btn"><svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 width="24"
@@ -74,8 +74,9 @@
                   stroke-linejoin="round"
                 />
               </svg>
+              </button>
             
-           
+           <button class="btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -94,9 +95,10 @@
               </svg>
             
           </div>
+        </button>
           <div class="buttons">
-            <button class="signup">Sign Up</button>
-            <button class="Login">Login</button>
+            <button class="btn">Sign Up</button>
+            <button class="btn">Login</button>
           </div>
         </div>
         <div class="spotifyplaylist rounded">
@@ -120,7 +122,7 @@
                   />
                 </svg>
               </div>
-              <img src="download.svg" alt="play" />
+              <img src="download.svg"alt="play" />
               <h2>Happy Hits!</h2>
               <p>Hits to boost your mood and fill you with happiness</p>
             </div>
@@ -150,7 +152,17 @@
               
           </div>
           <div class="playbar">
-            
+            <div class="songinfo">
+
+            </div>
+            <div class="songbutton">
+              <button class="btn"><img src="prevsong.svg"class="invert" alt="prev" ></button>
+              <button class="btn"><img id="play" class="invert" src="play.svg" alt="play"></button>
+              <button class="btn"><img src="nextsong.svg"class="invert" alt="next"></button>
+            </div>
+            <div class="songtime">
+
+            </div>
           </div>
           
         </div>
