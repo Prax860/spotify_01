@@ -31,3 +31,23 @@
 .p-1{
     padding: 10px;
 }
+/* For webkit based browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 10px; /* width of the scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #333; /* background color of the scrollbar track */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #666; /* color of the scrollbar handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; /* color of the scrollbar handle on hover */
+  }
+  
