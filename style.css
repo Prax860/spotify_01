@@ -188,3 +188,11 @@ body{
     
 }
    
+.songlist ul{
+    padding:0 42px;
+
+}
+.songlist ul li{
+    list-style-type: decimal;
+
+}
