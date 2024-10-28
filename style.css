@@ -1,198 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
 }
 body{
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+nav{
+   font-family: 'Ubuntu', sans-serif; 
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 65px;
     background-color: black;
     color: white;
 }
 
-.left{
-    width: 35vw;
-    padding: 10px;
-    
+nav ul li{
+    padding: 0 12px;
 }
 
-
-.right {
-    width: 75vw;
-    
-   
-}
-
-.home ul li{
-    width: 15px;
+.brand{
     display: flex;
-    gap: 15px;
-    list-style: none;
-    padding-top: 14px;
-    font-weight: bold;
-}
-.heading{
-    display: flex;
-    gap: 15px;
-    width: 100%;
-    padding-top: 14px;
-    padding: 23px 14px ;
-    font-weight:bold ;
     align-items: center;
-    font-size: 10px;
-    
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
-.library{
-    min-height: 80vh;
-    position: relative;
-    padding-right:10px ;
-}
-.heading img{
-    
-    width: 30px;
-}
-.footer{
-    gap: 13px;
-    position: absolute;
-    font-size: 10px;
-    display: flex;
-    bottom: 0 ;
-}
-.footer a{
-    color: grey;
-    padding: 34px 0;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2px;
-    gap: 4px;  
-    background-color:#121212;
-    opacity: 0.8;
-    position: static;
 
+.brand img{
+    width: 45px;
+    padding: 0 5px;
 }
-.header > *{
-    padding: 18px;
-}
-.right{
-    margin: 16px 0px;
-    position: relative;
-}
-/* .btn{
-    border-radius: 7px;
-    background-color: #121212;
-} */
 
-.spotifyplaylist{
-    padding: 16px;
-}
-.spotifyplaylist .card{
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #252525;
-    position: relative;
-    
-    
-}
-.card>*{
-    padding-top: 10px;
-    
-}
-.card img{
-    width: 100%;
-    object-fit: contain;
-}
-.cardcontainer{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    max-height: 70vh;
-    /* overflow-y: auto; */
-    max-width: fit-content;
-   
-    
-}
-.play{
-    width: 20px;
-    height: 28px;
-    background-color:#1fdf64;
-    border-radius: 50%;
-    border: 2px solid black;
-    padding:4px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 273px;
-    right: 17px;
-    opacity: 0;
-    transition: all 1s ease-out;
-}
-.signup{
-    font-weight: lighter;
-    background-color: #121212;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: whitesmoke;
-}
-.signup:hover{
-    font-weight: bold;
-    font-size: 16px;
+.container{
+    min-height: 73vh;
+    background-color: black;
     color: white;
-}
-.buttons >*{
-    margin: 0 12px;
-}
-.Login{
-    background-color: white;
-    border-radius: 10px;
-    color: black;
-    font-weight: lighter;
-    padding: 10px;
-    width: 79px;
-    cursor: pointer;
-
-}
-.Login:hover{
-    background-color: white;
-    border-radius: 10px;
-    color: black;
-    font-weight: bold;
-    padding: 10px;
-    width: 80px;
-    cursor: pointer;
-    
-   
- 
-
-}
-.spotifyplaylist{
-    
-}
-.playbar{
-    position: absolute;
-    bottom: 0;
-    background-color: #b0ecc9;
-    width: 90%;
-    /* padding:12px; */
-    justify-content: space-between;
-}
-
-.songbutton {
+    font-family: 'Varela Round',sans-serif;
     display: flex;
-   
-    cursor: pointer;
-    gap: 16px;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+}
+
+.bottom{
+    background-color: black;
+    color: white;
+    position: sticky;
+    height: 130px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    
+    align-items: center;
 }
-   
-.songlist ul{
-    padding:0 42px;
 
+.icon{
+    margin-top: 15px;
 }
-.songlist ul li{
-    list-style-type: decimal;
 
+.icon i{
+    cursor: pointer;
+    margin: 3px;
+}
+
+#Progressbar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+}
+
+.songItemContainer{
+    margin-top: 54px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.songlistplay i{
+    margin: 5px;
+}
+
+.timestamp{
+    margin: 0 25px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 11vw;
+}
+
+.songInfo span{
+    margin: 2px;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4 is ease-in;
 }
